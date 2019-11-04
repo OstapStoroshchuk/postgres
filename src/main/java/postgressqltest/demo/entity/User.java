@@ -20,16 +20,16 @@ public class User implements UserDetails {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "username")
+    @Column(name = "usrname")
     private String username;
 
-    @Column(name = "email")
+    @Column(name = "mail")
     private String email;
 
-    @Column(name = "password")
+    @Column(name = "pass")
     private String password;
 
-    @Column(name = "role")
+    @Column(name = "rol")
     @Enumerated(EnumType.STRING)
     private Role role = Role.User;
 
